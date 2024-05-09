@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Types</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<!--------------------------------------------------------->
+
+
+<!--Navbar with a dark background enables users to navigate between homepage and types page-->
+<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">My Coffee Webpage</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--Collapsible navbar-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="types.html">Types of Coffee</a>
+        </li>
+        <!---->
+        
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <h1>Coffee Types</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Espresso</td>
+        <td>Strong, concentrated coffee brewed by forcing hot water through finely-ground coffee beans</td>
+      </tr>
+      <tr>
+        <td>Cappuccino</td>
+        <td>Espresso-based coffee drink that originated in Italy, with steamed milk and foam</td>
+      </tr>
+      <tr> 
+        <td>Americano coffee</td>
+        <td>Composed of water and espresso. Served 1/2 espresso to 2/3 water. </td>
+      </tr>
+      <tr> 
+        <td>Red Eye Coffee</td>
+        <td> Concoction made up of adding a shot of espresso to a cup of standard drip coffee. </td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+
+  <!-- Form for user to submit their favorite type of coffee-->
+  <h2>Submit Your Favorite Coffee Type</h2>
+  <form>
+    <div class="form-group">
+      <label for="coffeeName">Coffee Name</label>
+      <input type="text" class="form-control" id="coffeeName" placeholder="Enter coffee name">
+    </div>
+    <div class="form-group">
+      <label for="coffeeDescription">Coffee Description</label>
+      <textarea class="form-control" id="coffeeDescription" rows="3" placeholder="Enter coffee description"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+
+</body>
+</html>
